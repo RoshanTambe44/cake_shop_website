@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind First Project</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="output.css" />
+    <link rel="stylesheet" href="ext.css" />
+  </head>
+  <body>
+    <nav 
+      id="home"
+      class="py-2 px-5  h-[70px] border-b-[1px] w-full flex items-center justify-between transition duration-900 hover:shadow-xl"
+    >
+      <div class="text-2xl font-extrabold">Cake</div>
+      <div class="hidden sm:flex gap-10">
+        <p class="font-bold text-white bg-black rounded-lg p-2 cursor-pointer hover:bg-white hover:text-black transition duration-300 " >Home</p>
+        <p class="font-bold rounded-lg p-2 cursor-pointer hover:text-white hover:bg-black transition duration-300 " >About</p>
+        <p class="font-bold rounded-lg p-2 cursor-pointer hover:text-white hover:bg-black transition duration-300" ><a href="#our-creation">Our Creation</a></p>
+        <p  class="font-bold rounded-lg p-2 cursor-pointer hover:text-white hover:bg-black transition duration-300" ><a href="#contact">Contact</a></p>
+      </div>
+      <div onclick="openNavListHandler()" class="sm:hidden">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </nav>
+
+    <main>
+      <!-- hero section  -->
+      <hero class="grid sm:grid-cols-2">
+        <div
+          class="text-center p-5 flex flex-col gap-3 items-center justify-center"
+        >
+          <h1 class="text-4xl font-bold">WE ARE FAMOUSE FOR CAKE !</h1>
+          <p>
+            There were two things that were important to Tracey. The first was
+            her dog. Anyone that had ever met Tracey knew how much she loved her
+            dog. Most would say that she treated it as her child. The dog went
+            everywhere with her and it had been her best friend for the past
+            five years.
+          </p>
+          <button
+            class="bg-yellow-200 rounded-3xl px-5 py-1 border flex gap-2 items-center text-zinc-700 border-yellow-500 transition duration-500 hover:shadow-lg hover:-translate-y-1 group"
+          >
+            check our work
+            <span
+              class="text-black transition duration-500 group-hover:translate-x-2"
+              ><i class="fa-solid fa-angle-right"></i
+            ></span>
+          </button>
+        </div>
+        <div class="text-center overflow-hidden">
+          <img
+            class="mt-10 hover:scale-110 transition duration-300"
+            src="https://t3.ftcdn.net/jpg/05/68/12/94/360_F_568129466_B9QOWOhjt6mqbliFOlvW58K8GcMDVNqo.jpg"
+            alt=""
+          />
+        </div>
+      </hero>
+
+      <!-- complete hero section -->
+
+      <!-- our createion -->
+      <div id="our-creation" class="bg-black h-auto">
+        <div class="custom-shape-divider-top-1713862543">
+          <svg
+            data-name="Layer 1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1200 120"
+            preserveAspectRatio="none"
+          >
+            <path
+              d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+              class="shape-fill"
+            ></path>
+          </svg>
+        </div>
+        <div class="text-5xl text-white font-bold text-center">
+          Our Creation
+        </div>
+
+        <div class="grid gap-5 sm:grid-cols-4 my-20 mx-20">
+          <div
+            class="p-2 max-w-[400px] bg-white rounded-lg text-center hover:scale-105 transition duration-300"
+          >
+            <img
+              class="border-2 w-full rounded-lg"
+              src="https://t3.ftcdn.net/jpg/05/68/12/94/360_F_568129466_B9QOWOhjt6mqbliFOlvW58K8GcMDVNqo.jpg"
+              alt=""
+            />
+            <h1>Stylish cake</h1>
+            <p>our best cake</p>
+          </div>
+          <div
+            class="p-2 max-w-[400px] bg-white rounded-lg text-center hover:scale-105 transition duration-300"
+          >
+            <img
+              class="border-2 w-full rounded-lg"
+              src="https://t4.ftcdn.net/jpg/05/77/84/55/240_F_577845594_EovUzhXih8CbtkW7K81hB8Aqw1VB7H1Y.jpg"
+              alt=""
+            />
+            <h1>Color cake</h1>
+            <p>our best cake</p>
+          </div>
+          <div
+            class="p-2 max-w-[400px] bg-white rounded-lg text-center hover:scale-105 transition duration-300"
+          >
+            <img
+              class="border-2 w-full rounded-lg"
+              src="https://t3.ftcdn.net/jpg/06/03/79/02/240_F_603790296_Sxw3f4SNKevKEfIT1qLS7YHYSs6Gqqlr.jpg"
+              alt=""
+            />
+            <h1>Normalcake</h1>
+            <p>our best cake</p>
+          </div>
+          <div
+            class="p-2 max-w-[400px] bg-white rounded-lg text-center hover:scale-105 transition duration-300"
+          >
+            <img
+              class="border-2 w-full rounded-lg"
+              src="https://t3.ftcdn.net/jpg/06/14/35/44/240_F_614354425_jYYnQYYAdQiU8feKUiLERM1zUZbkxSmw.jpg"
+              alt=""
+            />
+            <h1>Chise cake</h1>
+            <p>our best cake</p>
+          </div>
+          <div
+            class="p-2 max-w-[400px] bg-white rounded-lg text-center hover:scale-105 transition duration-300"
+          >
+            <img
+              class="border-2 w-full rounded-lg"
+              src="https://t3.ftcdn.net/jpg/06/35/96/52/240_F_635965299_VoRwD1atRmWKfqEedvFFQKKeIPw8hEe5.jpg "
+              alt=""
+            />
+            <h1>Bday cake</h1>
+            <p>our best cake</p>
+          </div>
+          <div
+            class="p-2 max-w-[400px] bg-white rounded-lg text-center hover:scale-105 transition duration-300"
+          >
+            <img
+              class="border-2 w-full rounded-lg"
+              src="https://t3.ftcdn.net/jpg/05/99/70/40/240_F_599704032_VNOJbfyrfTSP82szdFo4uJkXOk9pFINB.jpg"
+              alt=""
+            />
+            <h1>Stylish Cake</h1>
+            <p>our best cake</p>
+          </div>
+          <div
+            class="p-2 max-w-[400px] bg-white rounded-lg text-center hover:scale-105 transition duration-300"
+          >
+            <img
+              class="border-2 w-full rounded-lg"
+              src="https://t4.ftcdn.net/jpg/05/99/70/39/240_F_599703981_quGwbdrZDKyQyswfjSaF0rPLi3zLZZ1L.jpg"
+              alt=""
+            />
+            <h1>Chocalate Cake</h1>
+            <p>our best cake</p>
+          </div>
+          <div
+            class="p-2 max-w-[400px] bg-white rounded-lg text-center hover:scale-105 transition duration-300"
+          >
+            <img
+              class="border-2 w-full rounded-lg"
+              src="https://t4.ftcdn.net/jpg/05/61/55/45/240_F_561554528_C1NimmXQwVkYqyQgIN7e0jgId90h9g4i.jpg"
+              alt=""
+            />
+            <h1>Chocalate Cake</h1>
+            <p>our best cake</p>
+          </div>
+        </div>
+        <div class="custom-shape-divider-bottom-1713863828">
+          <svg
+            data-name="Layer 1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1200 120"
+            preserveAspectRatio="none"
+          >
+            <path
+              d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+              class="shape-fill"
+            ></path>
+          </svg>
+        </div>
+      </div>
+
+      <!-- --------------------- -->
+      <!-- contact form----------------------- -->
+      <div id="contact"
+        class="h-auto px-5 flex flex-col items-center relative overflow-hidden p-32"
+      >
+        <div class="text-5xl font-bold text-center z-10">Contact us</div>
+        <div
+          class="hidden lg:block h-[500px] w-[500px] absolute -left-20 rotate-6"
+        >
+          <img src="kindpng_1874855.png" alt="" />
+        </div>
+        <div
+          class="hidden lg:block h-[500px] w-[500px] absolute -right-20 -rotate-6"
+        >
+          <img
+            src="birthday cake.png"
+            alt=""
+          />
+        </div>
+        <div class="grid gap-3 grid-cols-12 m mt-40 lg:w-[50%] z-10">
+          <input
+            type="text"
+            placeholder="First name"
+            class="col-span-6 px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:border-blue-500 focus:shadow-lg"
+          />
+          <input
+            type="text"
+            placeholder="Last name "
+            class="col-span-6 focus:shadow-lg px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:border-blue-500"
+          />
+          <input
+            type="text"
+            placeholder="Email"
+            class="col-span-6 px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:border-blue-500 focus:shadow-lg"
+          />
+          <input
+            type="text"
+            placeholder="Phone no (optional)"
+            class="col-span-6 px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:border-blue-500 focus:shadow-lg"
+          />
+          <input
+            type="textarea"
+            placeholder="Message"
+            class="col-span-12 px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:border-blue-500 focus:shadow-lg"
+          />
+          <button
+            class="bg-blue-500 text-white hover:shadow-lg hover:bg-blue-400 hover:text-black transition duration-300 p-3 rounded-lg col-span-12"
+          >
+            Submit
+          </button>
+        </div>
+      </div>
+      <!-- -------------------------- -->
+
+      <!-- footer section -->
+      <footer class="h-auto bg-slate-600 cursor-pointer"> 
+        <div class="custom-shape-divider-top-1713948922">
+          <svg
+            data-name="Layer 1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1200 120"
+            preserveAspectRatio="none"
+          >
+            <path
+              d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+              class="shape-fill"
+            ></path>
+          </svg>
+        </div>
+        <div
+          class="h-auto p-10 grid sm:grid-cols-2 border-t-2 mx-8 mt-8 md:grid-cols-2 lg:grid-cols-4"
+        >
+          <div
+            class="h-full flex flex-col gap-4 text-4xl font-extrabold text-white"
+          >
+            <h1 class="text-center lg:text-start">Cake</h1>
+          </div>
+          <div class="h-full flex flex-col gap-2 mt-10 md:mt-0">
+            <h1 class="text-2xl text-center text-white font-bold">servisec</h1>
+            <h1 class="text-sm text-white text-center hover:-translate-y-1 hover:-translate-x-1  transition duration-300">chocalate cake</h1>
+            <h1 class="text-sm text-white text-center hover:-translate-y-1 hover:-translate-x-1  transition duration-300">strobary cake</h1>
+            <h1 class="text-sm text-white text-center hover:-translate-y-1 hover:-translate-x-1  transition duration-300">monganis cake</h1>
+            <h1 class="text-sm text-white text-center hover:-translate-y-1 hover:-translate-x-1  transition duration-300">green cake</h1>
+          </div>
+          <div class="h-full flex flex-col gap-2 mt-10 lg:mt-0">
+            <h1 class="text-2xl text-center text-white font-bold">pages</h1>
+            <h1 class="text-sm text-white text-center hover:-translate-y-1 hover:-translate-x-1  transition duration-300">contact page</h1>
+            <h1 class="text-sm text-white text-center hover:-translate-y-1 hover:-translate-x-1  transition duration-300">about page</h1>
+            <h1 class="text-sm text-white text-center hover:-translate-y-1 hover:-translate-x-1  transition duration-300">chocalate page</h1>
+            <h1 class="text-sm text-white text-center hover:-translate-y-1 hover:-translate-x-1  transition duration-300">home page</h1>
+          </div>
+          <div class="h-full flex flex-col gap-2 mt-10 lg:mt-0">
+            <h1 class="text-2xl text-center text-white font-bold">Social</h1>
+            <h1 class="text-sm text-white text-center hover:-translate-y-1 hover:-translate-x-1  transition duration-300">facebook</h1>
+            <h1 class="text-sm text-white text-center hover:-translate-y-1 hover:-translate-x-1  transition duration-300">instagram</h1>
+            <h1 class="text-sm text-white text-center hover:-translate-y-1 hover:-translate-x-1  transition duration-300">tweeter</h1>
+            <h1 class="text-sm text-white text-center hover:-translate-y-1 hover:-translate-x-1  transition duration-300">git hub</h1>
+          </div>
+        </div>
+      </footer>
+      <!-- ------------------------------------ -->
+
+      <!-- <div class="text-center bg-gray-600 text-white selection:bg-orange-400" >Developed by <b>Roshan tambe</b> </div> -->
+
+      
+      </div>
+      <div id="verticalNav" class="hidden sm:hidden  absolute top-0 w-[100vw] h-[100vh] bg-white">
+        <div class=" h-[70px] border-b-2 flex justify-between px-5 py-2 items-center">
+          <h1 class="text-2xl font-bold" >Cake</h1>
+          <h1 onclick="addClass()" ><i class="fa-solid fa-xmark"></i></h1>
+        </div>
+        <div class="flex flex-col mt-10 gap-10 px-5">
+          <p class="border-b-2 py-4 " >Home</p>
+          <p class="border-b-2 py-4 " >About</p>
+          <p class="border-b-2 py-4 " >Comunity</p>
+          <p class="border-b-2 py-4 " >Contact</p>
+        </div>
+      </div>  
+      <a href="#home"><div  class="fixed bottom-2 hover:scale-110 hover:bg-purple-400 hover:shadow-2xl duration-500 right-2 rounded-full shadow-xl h-[50px] w-[50px] text-white bg-purple-500 flex items-center justify-center z-10 "><i class="fa-solid fa-angle-up"></i></div></a>
+    </main>
+    <script>
+        const verticalNav = document.getElementById("verticalNav");
+        
+        function openNavListHandler(){
+          verticalNav.classList.remove("hidden")
+        }
+        function addClass(){
+          verticalNav.classList.add("hidden")
+        }
+
+    </script>
+  </body>
+
+
+</html>
