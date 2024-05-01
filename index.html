@@ -26,7 +26,7 @@
         <p class="font-bold rounded-lg p-2 cursor-pointer hover:text-white hover:bg-black transition duration-300" ><a href="#our-creation">Our Creation</a></p>
         <p  class="font-bold rounded-lg p-2 cursor-pointer hover:text-white hover:bg-black transition duration-300" ><a href="#contact">Contact</a></p>
       </div>
-      <div onclick="openNavListHandler()" class="sm:hidden">
+      <div onclick="openNavListHandler()" class="sm:hidden cursor-pointer">
         <i class="fa-solid fa-bars"></i>
       </div>
     </nav>
@@ -38,14 +38,14 @@
           class="text-center p-5 flex flex-col gap-3 items-center justify-center"
         >
           <h1 class="text-4xl font-bold">WE ARE FAMOUSE FOR CAKE !</h1>
-          <p>
+          <p class="px-4">
             There were two things that were important to Tracey. The first was
             her dog. Anyone that had ever met Tracey knew how much she loved her
             dog. Most would say that she treated it as her child. The dog went
             everywhere with her and it had been her best friend for the past
             five years.
           </p>
-          <button
+          <a href="#our-creation"><button
             class="bg-yellow-200 rounded-3xl px-5 py-1 border flex gap-2 items-center text-zinc-700 border-yellow-500 transition duration-500 hover:shadow-lg hover:-translate-y-1 group"
           >
             check our work
@@ -53,7 +53,7 @@
               class="text-black transition duration-500 group-hover:translate-x-2"
               ><i class="fa-solid fa-angle-right"></i
             ></span>
-          </button>
+          </button></a>
         </div>
         <div class="text-center overflow-hidden">
           <img
@@ -298,14 +298,14 @@
       </div>
       <div id="verticalNav" class="hidden sm:hidden fixed top-0 w-[100vw] h-[100vh] bg-white">
         <div class=" h-[70px] border-b-2 flex justify-between px-5 py-2 items-center">
-          <h1 class="text-2xl font-bold" >Cake</h1>
-          <h1 onclick="addClass()" ><i class="fa-solid fa-xmark"></i></h1>
+          <h1 class="text-2xl font-extrabold" >Cake</h1>
+          <div onclick="addClass()" class="cursor-pointer" ><i class="text-xl me-4 fa-solid fa-xmark"></i></div>
         </div>
         <div class="flex flex-col mt-10 gap-10 px-5">
-          <p class="border-b-2 py-4 " ><a href="#home">Home</a></p>
-          <p class="border-b-2 py-4 " ><a href="#">About</a></p>
-          <p class="border-b-2 py-4 " ><a href="#our-creation">Our Creation</a></p>
-          <p class="border-b-2 py-4 " ><a href="#contact">Contact</a></p>
+          <p class="border-b-2 py-4 " ><a href="#home" onclick="addClass()"  >Home</a></p>
+          <p class="border-b-2 py-4 " ><a href="#" onclick="addClass()"  >About</a></p>
+          <p class="border-b-2 py-4 " ><a href="#our-creation" onclick="addClass()"  >Our Creation</a></p>
+          <p class="border-b-2 py-4 " ><a href="#contact" onclick="addClass()"  >Contact</a></p>
         </div>
       </div>  
       <a href="#home"><div  class="fixed bottom-2 hover:scale-110 hover:bg-purple-400 hover:shadow-2xl duration-500 right-2 rounded-full shadow-xl h-[50px] w-[50px] text-white bg-purple-500 flex items-center justify-center z-10 "><i class="fa-solid fa-angle-up"></i></div></a>
